@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		BFF4C4972A16253300D92F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4C4962A16253300D92F11 /* AppDelegate.swift */; };
 		BFF4C4992A16253300D92F11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4C4982A16253300D92F11 /* SceneDelegate.swift */; };
-		BFF4C49B2A16253300D92F11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4C49A2A16253300D92F11 /* ViewController.swift */; };
-		BFF4C49E2A16253300D92F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF4C49C2A16253300D92F11 /* Main.storyboard */; };
+		BFF4C49B2A16253300D92F11 /* BestHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4C49A2A16253300D92F11 /* BestHeroViewController.swift */; };
 		BFF4C4A02A16253400D92F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF4C49F2A16253400D92F11 /* Assets.xcassets */; };
 		BFF4C4A32A16253400D92F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF4C4A12A16253400D92F11 /* LaunchScreen.storyboard */; };
+		BFF4C4B42A16304D00D92F11 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BFF4C4B32A16304D00D92F11 /* SnapKit */; };
+		BFF4C4B62A16318800D92F11 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4C4B52A16318800D92F11 /* CustomTableViewCell.swift */; };
+		BFF4C4B82A16327600D92F11 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4C4B72A16327600D92F11 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFF4C4932A16253300D92F11 /* HeroTableD2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroTableD2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF4C4962A16253300D92F11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF4C4982A16253300D92F11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFF4C49A2A16253300D92F11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BFF4C49D2A16253300D92F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFF4C49A2A16253300D92F11 /* BestHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestHeroViewController.swift; sourceTree = "<group>"; };
 		BFF4C49F2A16253400D92F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFF4C4A22A16253400D92F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFF4C4A42A16253400D92F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF4C4B52A16318800D92F11 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		BFF4C4B72A16327600D92F11 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF4C4B42A16304D00D92F11 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +60,56 @@
 		BFF4C4952A16253300D92F11 /* HeroTableD2 */ = {
 			isa = PBXGroup;
 			children = (
-				BFF4C4962A16253300D92F11 /* AppDelegate.swift */,
-				BFF4C4982A16253300D92F11 /* SceneDelegate.swift */,
-				BFF4C49A2A16253300D92F11 /* ViewController.swift */,
-				BFF4C49C2A16253300D92F11 /* Main.storyboard */,
+				BFF4C4AA2A1628F100D92F11 /* Sources */,
+				BFF4C4AB2A16291E00D92F11 /* CustomModule */,
 				BFF4C49F2A16253400D92F11 /* Assets.xcassets */,
 				BFF4C4A12A16253400D92F11 /* LaunchScreen.storyboard */,
 				BFF4C4A42A16253400D92F11 /* Info.plist */,
 			);
 			path = HeroTableD2;
+			sourceTree = "<group>";
+		};
+		BFF4C4AA2A1628F100D92F11 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4C4962A16253300D92F11 /* AppDelegate.swift */,
+				BFF4C4982A16253300D92F11 /* SceneDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BFF4C4AB2A16291E00D92F11 /* CustomModule */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4C4AD2A16298800D92F11 /* Model */,
+				BFF4C4AC2A16297800D92F11 /* View */,
+				BFF4C4AE2A16299300D92F11 /* ViewCell */,
+			);
+			path = CustomModule;
+			sourceTree = "<group>";
+		};
+		BFF4C4AC2A16297800D92F11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4C49A2A16253300D92F11 /* BestHeroViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFF4C4AD2A16298800D92F11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4C4B72A16327600D92F11 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFF4C4AE2A16299300D92F11 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4C4B52A16318800D92F11 /* CustomTableViewCell.swift */,
+			);
+			path = ViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = HeroTableD2;
+			packageProductDependencies = (
+				BFF4C4B32A16304D00D92F11 /* SnapKit */,
+			);
 			productName = HeroTableD2;
 			productReference = BFF4C4932A16253300D92F11 /* HeroTableD2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = BFF4C48A2A16253200D92F11;
+			packageReferences = (
+				BFF4C4B22A16304D00D92F11 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = BFF4C4942A16253300D92F11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +178,6 @@
 			files = (
 				BFF4C4A32A16253400D92F11 /* LaunchScreen.storyboard in Resources */,
 				BFF4C4A02A16253400D92F11 /* Assets.xcassets in Resources */,
-				BFF4C49E2A16253300D92F11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF4C49B2A16253300D92F11 /* ViewController.swift in Sources */,
+				BFF4C4B82A16327600D92F11 /* Model.swift in Sources */,
+				BFF4C49B2A16253300D92F11 /* BestHeroViewController.swift in Sources */,
 				BFF4C4972A16253300D92F11 /* AppDelegate.swift in Sources */,
+				BFF4C4B62A16318800D92F11 /* CustomTableViewCell.swift in Sources */,
 				BFF4C4992A16253300D92F11 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BFF4C49C2A16253300D92F11 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFF4C49D2A16253300D92F11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BFF4C4A12A16253400D92F11 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +336,6 @@
 				INFOPLIST_FILE = HeroTableD2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +363,6 @@
 				INFOPLIST_FILE = HeroTableD2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +400,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFF4C4B22A16304D00D92F11 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFF4C4B32A16304D00D92F11 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFF4C4B22A16304D00D92F11 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFF4C48B2A16253300D92F11 /* Project object */;
 }
