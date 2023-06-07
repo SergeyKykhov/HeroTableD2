@@ -8,7 +8,7 @@
 - click on the arrow on the right in the line and go to the main screen of the counter pick.
 
 ## Screenshots
-<img src="https://github.com/SergeyKykhov/HeroTableD2/blob/develop/Screenshots/1.png" width="214" height="463"><img src="https://github.com/SergeyKykhov/HeroTableD2/blob/develop/Screenshots/2.png" width="214" height="463">
+<img src="https://github.com/SergeyKykhov/HeroTableD2/blob/develop/Screenshots/1.png" width="214" height="433"><img src="https://github.com/SergeyKykhov/HeroTableD2/blob/develop/Screenshots/2.png" width="214" height="433">
 
 ## Technologies Used
 - SnapKit
